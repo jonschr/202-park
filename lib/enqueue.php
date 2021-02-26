@@ -14,6 +14,8 @@ function gutenberg_editor_style_setup() {
     
     // Google fonts
     add_editor_style( 'https://fonts.googleapis.com/css?family=Source+Sans+Pro' );
+    add_editor_style( 'https://fonts.googleapis.com/css?family=Libre+Baskerville' );
+    add_editor_style( 'https://fonts.googleapis.com/css?family=Lato' );
 }
 
 /**
@@ -24,6 +26,18 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
 
     wp_enqueue_style( 'gfont-source-sans',
         'https://fonts.googleapis.com/css?family=Source+Sans+Pro',
+        array(),
+        CHILD_THEME_VERSION
+    );
+    
+    wp_enqueue_style( 'gfont-libre',
+        'https://fonts.googleapis.com/css?family=Libre+Baskerville',
+        array(),
+        CHILD_THEME_VERSION
+    );
+    
+    wp_enqueue_style( 'gfont-lato',
+        'https://fonts.googleapis.com/css?family=Lato',
         array(),
         CHILD_THEME_VERSION
     );
