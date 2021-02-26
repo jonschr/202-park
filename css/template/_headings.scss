@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    line-height: 1.2em;
+    margin: 0 0 20px;
+    clear: both;
+    color: $dark;
+    font-family: "Source Sans Pro", sans-serif;
+
+    br {
+        @include notdesktop {
+            display: none;
+        }
+    }
+}
+
+h1 {
+    font-size: 50px;
+
+    @include tablet {
+        font-size: 35px;
+    }
+
+    @include mobile {
+        font-size: 30px;
+    }
+}
+
+.editor-post-title__block .editor-post-title__input {
+    @extend h1;
+}
+
+h2 {
+    font-size: 40px;
+
+    @include tablet {
+        font-size: 30px;
+    }
+
+    @include mobile {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    color: $highlight;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+/* ==========================================================================
+   Kicker headings
+   ========================================================================== */
+
+.gutenberg-section {
+    .content-wrap {
+
+        >h3:first-child,
+        >h4:first-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Titles
+   ========================================================================== */
+
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h2.entry-title {
+    font-size: 35px;
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.entry-title a:focus,
+.entry-title a:hover {
+    color: $highlight;
+}
+
+.widget-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}

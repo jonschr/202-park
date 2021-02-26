@@ -1,0 +1,1340 @@
+/* ==========================================================================
+   Get options
+   ========================================================================== */
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+/* ==========================================================================
+   Color loop
+   ========================================================================== */
+/*
+   Connect up the colors
+   ========================================================================== */
+.has-white-color {
+  color: #ffffff; }
+
+.has-white-background-color {
+  background-color: #ffffff; }
+
+.has-light-color {
+  color: #f5f5f5; }
+
+.has-light-background-color {
+  background-color: #f5f5f5; }
+
+.has-default-color {
+  color: #403F3E; }
+
+.has-default-background-color {
+  background-color: #403F3E; }
+
+.has-dark-color {
+  color: #111111; }
+
+.has-dark-background-color {
+  background-color: #111111; }
+
+.has-blue-color {
+  color: #0f5790; }
+
+.has-blue-background-color {
+  background-color: #0f5790; }
+
+.has-highlight-color {
+  color: #147bcd; }
+
+.has-highlight-background-color {
+  background-color: #147bcd; }
+
+/*
+   Connect up the dark ones
+   ========================================================================== */
+.has-default-background-color {
+  color: white; }
+  .has-default-background-color h1, .has-default-background-color .editor-post-title__block .editor-post-title__input, .editor-post-title__block .has-default-background-color .editor-post-title__input,
+  .has-default-background-color h2 {
+    color: white; }
+  .has-default-background-color ul {
+    color: white; }
+
+.has-dark-background-color {
+  color: white; }
+  .has-dark-background-color h1, .has-dark-background-color .editor-post-title__block .editor-post-title__input, .editor-post-title__block .has-dark-background-color .editor-post-title__input,
+  .has-dark-background-color h2 {
+    color: white; }
+  .has-dark-background-color ul {
+    color: white; }
+
+.has-blue-background-color {
+  color: white; }
+  .has-blue-background-color h1, .has-blue-background-color .editor-post-title__block .editor-post-title__input, .editor-post-title__block .has-blue-background-color .editor-post-title__input,
+  .has-blue-background-color h2 {
+    color: white; }
+  .has-blue-background-color ul {
+    color: white; }
+
+.has-highlight-background-color {
+  color: white; }
+  .has-highlight-background-color h1, .has-highlight-background-color .editor-post-title__block .editor-post-title__input, .editor-post-title__block .has-highlight-background-color .editor-post-title__input,
+  .has-highlight-background-color h2 {
+    color: white; }
+  .has-highlight-background-color ul {
+    color: white; }
+
+/* ==========================================================================
+   Vars
+   ========================================================================== */
+/* ==========================================================================
+   Queries
+   ========================================================================== */
+/* ==========================================================================
+   Block width
+   ========================================================================== */
+/* Regular content width.
+/* Add 27px to match paragraph width on front-end and editor.
+---------------------------------------------------------------------------- */
+.wp-block {
+  max-width: calc(806px); }
+
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+/* Width of "wide" blocks
+/* 1062px + 30px so wide images match width in front-end and editor.
+/* 1062px = default column width of 702px + .alignwide negative margin of 360px
+---------------------------------------------------------------------------- */
+.wp-block[data-align="wide"] {
+  max-width: calc(1200px + 30px); }
+
+.wp-block[data-align="full"] {
+  max-width: none; }
+
+/* ==========================================================================
+   Captions
+   ========================================================================== */
+.wp-block-audio figcaption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption {
+  color: #666;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 30px;
+  margin-top: 10px; }
+
+/* ==========================================================================
+   Lists in the editor
+   ========================================================================== */
+ul.rich-text,
+ol.rich-text {
+  padding-left: 40px; }
+
+/* ==========================================================================
+   Includes
+   ========================================================================== */
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+h1, .editor-post-title__block .editor-post-title__input,
+h2,
+h3,
+.wp-block-pb-accordion-item h1,
+.wp-block-pb-accordion-item .editor-post-title__block .editor-post-title__input,
+.editor-post-title__block .wp-block-pb-accordion-item .editor-post-title__input,
+.wp-block-pb-accordion-item h2,
+.wp-block-pb-accordion-item h3,
+.wp-block-pb-accordion-item h4,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0 0 20px;
+  clear: both;
+  color: #111111;
+  font-family: "Source Sans Pro", sans-serif; }
+  @media (max-width: 960px) {
+    h1 br, .editor-post-title__block .editor-post-title__input br,
+    h2 br,
+    h3 br,
+    .wp-block-pb-accordion-item h1 br,
+    .wp-block-pb-accordion-item .editor-post-title__block .editor-post-title__input br,
+    .editor-post-title__block .wp-block-pb-accordion-item .editor-post-title__input br,
+    .wp-block-pb-accordion-item h2 br,
+    .wp-block-pb-accordion-item h3 br,
+    .wp-block-pb-accordion-item h4 br,
+    h4 br,
+    h5 br,
+    h6 br {
+      display: none; } }
+
+h1, .editor-post-title__block .editor-post-title__input {
+  font-size: 50px; }
+  @media (min-width: 600px) and (max-width: 960px) {
+    h1, .editor-post-title__block .editor-post-title__input {
+      font-size: 35px; } }
+  @media (max-width: 600px) {
+    h1, .editor-post-title__block .editor-post-title__input {
+      font-size: 30px; } }
+
+h2 {
+  font-size: 40px; }
+  @media (min-width: 600px) and (max-width: 960px) {
+    h2 {
+      font-size: 30px; } }
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 30px; } }
+
+
+h3,
+.wp-block-pb-accordion-item h1,
+.wp-block-pb-accordion-item .editor-post-title__block .editor-post-title__input,
+.editor-post-title__block .wp-block-pb-accordion-item .editor-post-title__input,
+.wp-block-pb-accordion-item h2,
+.wp-block-pb-accordion-item h3,
+.wp-block-pb-accordion-item h4 {
+  font-size: 25px;
+  font-weight: 400; }
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  color: #147bcd; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+/* ==========================================================================
+   Kicker headings
+   ========================================================================== */
+.gutenberg-section .content-wrap > h3:first-child, .gutenberg-section .wp-block-pb-accordion-item .content-wrap > h1:first-child, .wp-block-pb-accordion-item .gutenberg-section .content-wrap > h1:first-child, .gutenberg-section .wp-block-pb-accordion-item .editor-post-title__block .content-wrap > .editor-post-title__input:first-child, .wp-block-pb-accordion-item .editor-post-title__block .gutenberg-section .content-wrap > .editor-post-title__input:first-child, .gutenberg-section .editor-post-title__block .wp-block-pb-accordion-item .content-wrap > .editor-post-title__input:first-child, .editor-post-title__block .wp-block-pb-accordion-item .gutenberg-section .content-wrap > .editor-post-title__input:first-child,
+.gutenberg-section .wp-block-pb-accordion-item .content-wrap > h2:first-child, .wp-block-pb-accordion-item .gutenberg-section .content-wrap > h2:first-child,
+.gutenberg-section .wp-block-pb-accordion-item .content-wrap > h3:first-child,
+.gutenberg-section .wp-block-pb-accordion-item .content-wrap > h4:first-child, .wp-block-pb-accordion-item .gutenberg-section .content-wrap > h4:first-child,
+.gutenberg-section .content-wrap > h4:first-child {
+  margin-bottom: 0; }
+
+/* ==========================================================================
+   Titles
+   ========================================================================== */
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+h2.entry-title {
+  font-size: 35px; }
+
+.entry-title a,
+.sidebar .widget-title a {
+  color: #333;
+  text-decoration: none; }
+
+.entry-title a:focus,
+.entry-title a:hover {
+  color: #147bcd; }
+
+.widget-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px; }
+
+.button, .wp-block-buttons .wp-block-button .wp-block-button__link, .wp-block-file .wp-block-file__button,
+.gform_wrapper .gform_footer .gform_button.button,
+.gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.wp-block-button__link,
+.wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link,
+.gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button,
+.wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  background-color: #147bcd;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  padding: 15px 20px;
+  line-height: 1em;
+  position: static;
+  transition: .3s all ease;
+  border: 2px solid #147bcd;
+  border-radius: 3px;
+  text-decoration: none !important;
+  display: inline-block; }
+  @media (max-width: 600px) {
+    .button, .wp-block-buttons .wp-block-button .wp-block-button__link, .wp-block-file .wp-block-file__button,
+    .gform_wrapper .gform_footer .gform_button.button,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.wp-block-button__link,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button {
+      text-align: center;
+      display: block;
+      width: 100%; } }
+  .button:hover, .wp-block-buttons .wp-block-button .wp-block-button__link:hover, .wp-block-file .wp-block-file__button:hover, .button:focus, .wp-block-buttons .wp-block-button .wp-block-button__link:focus, .wp-block-file .wp-block-file__button:focus, .button:active, .wp-block-buttons .wp-block-button .wp-block-button__link:active, .wp-block-file .wp-block-file__button:active,
+  .gform_wrapper .gform_footer .gform_button.button:hover,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.wp-block-button__link:hover,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link:hover,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button:hover,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button:hover,
+  .gform_wrapper .gform_footer .gform_button.button:focus,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.wp-block-button__link:focus,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link:focus,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button:focus,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button:focus,
+  .gform_wrapper .gform_footer .gform_button.button:active,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.wp-block-button__link:active,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link:active,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button:active,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button:active {
+    background-color: #1c8ee9;
+    border-color: #1c8ee9;
+    color: white; }
+  .button.has-white-color, .wp-block-buttons .wp-block-button .has-white-color.wp-block-button__link, .wp-block-file .has-white-color.wp-block-file__button, .button.has-color-white, .wp-block-buttons .wp-block-button .has-color-white.wp-block-button__link, .wp-block-file .has-color-white.wp-block-file__button, .button.white, .wp-block-buttons .wp-block-button .white.wp-block-button__link, .wp-block-file .white.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-white-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-white-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-white-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-white-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-white-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-color-white,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-white.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-white.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-white.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-white.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.white,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.white.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.white.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.white.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.white.wp-block-file__button {
+    color: #ffffff; }
+  .button.has-white-background-color, .wp-block-buttons .wp-block-button .has-white-background-color.wp-block-button__link, .wp-block-file .has-white-background-color.wp-block-file__button, .button.background-white, .wp-block-buttons .wp-block-button .background-white.wp-block-button__link, .wp-block-file .background-white.wp-block-file__button, .button.white-background, .wp-block-buttons .wp-block-button .white-background.wp-block-button__link, .wp-block-file .white-background.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-white-background-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-white-background-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-white-background-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-white-background-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-white-background-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.background-white,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-white.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-white.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-white.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-white.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.white-background,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.white-background.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.white-background.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.white-background.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.white-background.wp-block-file__button {
+    background-color: #ffffff;
+    border-color: #ffffff; }
+    .button.has-white-background-color:hover, .wp-block-buttons .wp-block-button .has-white-background-color.wp-block-button__link:hover, .wp-block-file .has-white-background-color.wp-block-file__button:hover, .button.background-white:hover, .wp-block-buttons .wp-block-button .background-white.wp-block-button__link:hover, .wp-block-file .background-white.wp-block-file__button:hover, .button.white-background:hover, .wp-block-buttons .wp-block-button .white-background.wp-block-button__link:hover, .wp-block-file .white-background.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.has-white-background-color:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-white-background-color.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-white-background-color.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-white-background-color.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-white-background-color.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.background-white:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-white.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-white.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-white.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-white.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.white-background:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.white-background.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.white-background.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.white-background.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.white-background.wp-block-file__button:hover {
+      background-color: white;
+      border-color: white; }
+  .button.has-light-color, .wp-block-buttons .wp-block-button .has-light-color.wp-block-button__link, .wp-block-file .has-light-color.wp-block-file__button, .button.has-color-light, .wp-block-buttons .wp-block-button .has-color-light.wp-block-button__link, .wp-block-file .has-color-light.wp-block-file__button, .button.light, .wp-block-buttons .wp-block-button .light.wp-block-button__link, .wp-block-file .light.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-light-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-light-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-light-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-light-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-light-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-color-light,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-light.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-light.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-light.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-light.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.light,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.light.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.light.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.light.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.light.wp-block-file__button {
+    color: #f5f5f5; }
+  .button.has-light-background-color, .wp-block-buttons .wp-block-button .has-light-background-color.wp-block-button__link, .wp-block-file .has-light-background-color.wp-block-file__button, .button.background-light, .wp-block-buttons .wp-block-button .background-light.wp-block-button__link, .wp-block-file .background-light.wp-block-file__button, .button.light-background, .wp-block-buttons .wp-block-button .light-background.wp-block-button__link, .wp-block-file .light-background.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-light-background-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-light-background-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-light-background-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-light-background-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-light-background-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.background-light,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-light.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-light.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-light.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-light.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.light-background,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.light-background.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.light-background.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.light-background.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.light-background.wp-block-file__button {
+    background-color: #f5f5f5;
+    border-color: #f5f5f5; }
+    .button.has-light-background-color:hover, .wp-block-buttons .wp-block-button .has-light-background-color.wp-block-button__link:hover, .wp-block-file .has-light-background-color.wp-block-file__button:hover, .button.background-light:hover, .wp-block-buttons .wp-block-button .background-light.wp-block-button__link:hover, .wp-block-file .background-light.wp-block-file__button:hover, .button.light-background:hover, .wp-block-buttons .wp-block-button .light-background.wp-block-button__link:hover, .wp-block-file .light-background.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.has-light-background-color:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-light-background-color.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-light-background-color.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-light-background-color.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-light-background-color.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.background-light:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-light.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-light.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-light.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-light.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.light-background:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.light-background.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.light-background.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.light-background.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.light-background.wp-block-file__button:hover {
+      background-color: white;
+      border-color: white; }
+  .button.has-default-color, .wp-block-buttons .wp-block-button .has-default-color.wp-block-button__link, .wp-block-file .has-default-color.wp-block-file__button, .button.has-color-default, .wp-block-buttons .wp-block-button .has-color-default.wp-block-button__link, .wp-block-file .has-color-default.wp-block-file__button, .button.default, .wp-block-buttons .wp-block-button .default.wp-block-button__link, .wp-block-file .default.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-default-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-default-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-default-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-default-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-default-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-color-default,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-default.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-default.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-default.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-default.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.default,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.default.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.default.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.default.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.default.wp-block-file__button {
+    color: #403F3E; }
+  .button.has-default-background-color, .wp-block-buttons .wp-block-button .has-default-background-color.wp-block-button__link, .wp-block-file .has-default-background-color.wp-block-file__button, .button.background-default, .wp-block-buttons .wp-block-button .background-default.wp-block-button__link, .wp-block-file .background-default.wp-block-file__button, .button.default-background, .wp-block-buttons .wp-block-button .default-background.wp-block-button__link, .wp-block-file .default-background.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-default-background-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-default-background-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-default-background-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-default-background-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-default-background-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.background-default,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-default.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-default.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-default.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-default.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.default-background,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.default-background.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.default-background.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.default-background.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.default-background.wp-block-file__button {
+    background-color: #403F3E;
+    border-color: #403F3E; }
+    .button.has-default-background-color:hover, .wp-block-buttons .wp-block-button .has-default-background-color.wp-block-button__link:hover, .wp-block-file .has-default-background-color.wp-block-file__button:hover, .button.background-default:hover, .wp-block-buttons .wp-block-button .background-default.wp-block-button__link:hover, .wp-block-file .background-default.wp-block-file__button:hover, .button.default-background:hover, .wp-block-buttons .wp-block-button .default-background.wp-block-button__link:hover, .wp-block-file .default-background.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.has-default-background-color:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-default-background-color.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-default-background-color.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-default-background-color.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-default-background-color.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.background-default:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-default.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-default.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-default.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-default.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.default-background:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.default-background.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.default-background.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.default-background.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.default-background.wp-block-file__button:hover {
+      background-color: #525150;
+      border-color: #525150; }
+  .button.has-dark-color, .wp-block-buttons .wp-block-button .has-dark-color.wp-block-button__link, .wp-block-file .has-dark-color.wp-block-file__button, .button.has-color-dark, .wp-block-buttons .wp-block-button .has-color-dark.wp-block-button__link, .wp-block-file .has-color-dark.wp-block-file__button, .button.dark, .wp-block-buttons .wp-block-button .dark.wp-block-button__link, .wp-block-file .dark.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-dark-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-dark-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-dark-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-dark-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-dark-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-color-dark,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-dark.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-dark.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-dark.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-dark.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.dark,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.dark.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.dark.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.dark.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.dark.wp-block-file__button {
+    color: #111111; }
+  .button.has-dark-background-color, .wp-block-buttons .wp-block-button .has-dark-background-color.wp-block-button__link, .wp-block-file .has-dark-background-color.wp-block-file__button, .button.background-dark, .wp-block-buttons .wp-block-button .background-dark.wp-block-button__link, .wp-block-file .background-dark.wp-block-file__button, .button.dark-background, .wp-block-buttons .wp-block-button .dark-background.wp-block-button__link, .wp-block-file .dark-background.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-dark-background-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-dark-background-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-dark-background-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-dark-background-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-dark-background-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.background-dark,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-dark.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-dark.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-dark.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-dark.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.dark-background,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.dark-background.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.dark-background.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.dark-background.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.dark-background.wp-block-file__button {
+    background-color: #111111;
+    border-color: #111111; }
+    .button.has-dark-background-color:hover, .wp-block-buttons .wp-block-button .has-dark-background-color.wp-block-button__link:hover, .wp-block-file .has-dark-background-color.wp-block-file__button:hover, .button.background-dark:hover, .wp-block-buttons .wp-block-button .background-dark.wp-block-button__link:hover, .wp-block-file .background-dark.wp-block-file__button:hover, .button.dark-background:hover, .wp-block-buttons .wp-block-button .dark-background.wp-block-button__link:hover, .wp-block-file .dark-background.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.has-dark-background-color:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-dark-background-color.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-dark-background-color.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-dark-background-color.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-dark-background-color.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.background-dark:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-dark.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-dark.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-dark.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-dark.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.dark-background:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.dark-background.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.dark-background.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.dark-background.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.dark-background.wp-block-file__button:hover {
+      background-color: #232323;
+      border-color: #232323; }
+  .button.has-blue-color, .wp-block-buttons .wp-block-button .has-blue-color.wp-block-button__link, .wp-block-file .has-blue-color.wp-block-file__button, .button.has-color-blue, .wp-block-buttons .wp-block-button .has-color-blue.wp-block-button__link, .wp-block-file .has-color-blue.wp-block-file__button, .button.blue, .wp-block-buttons .wp-block-button .blue.wp-block-button__link, .wp-block-file .blue.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-blue-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-blue-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-blue-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-blue-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-blue-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-color-blue,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-blue.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-blue.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-blue.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-blue.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.blue,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.blue.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.blue.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.blue.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.blue.wp-block-file__button {
+    color: #0f5790; }
+  .button.has-blue-background-color, .wp-block-buttons .wp-block-button .has-blue-background-color.wp-block-button__link, .wp-block-file .has-blue-background-color.wp-block-file__button, .button.background-blue, .wp-block-buttons .wp-block-button .background-blue.wp-block-button__link, .wp-block-file .background-blue.wp-block-file__button, .button.blue-background, .wp-block-buttons .wp-block-button .blue-background.wp-block-button__link, .wp-block-file .blue-background.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-blue-background-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-blue-background-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-blue-background-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-blue-background-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-blue-background-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.background-blue,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-blue.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-blue.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-blue.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-blue.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.blue-background,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.blue-background.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.blue-background.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.blue-background.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.blue-background.wp-block-file__button {
+    background-color: #0f5790;
+    border-color: #0f5790; }
+    .button.has-blue-background-color:hover, .wp-block-buttons .wp-block-button .has-blue-background-color.wp-block-button__link:hover, .wp-block-file .has-blue-background-color.wp-block-file__button:hover, .button.background-blue:hover, .wp-block-buttons .wp-block-button .background-blue.wp-block-button__link:hover, .wp-block-file .background-blue.wp-block-file__button:hover, .button.blue-background:hover, .wp-block-buttons .wp-block-button .blue-background.wp-block-button__link:hover, .wp-block-file .blue-background.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.has-blue-background-color:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-blue-background-color.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-blue-background-color.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-blue-background-color.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-blue-background-color.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.background-blue:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-blue.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-blue.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-blue.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-blue.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.blue-background:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.blue-background.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.blue-background.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.blue-background.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.blue-background.wp-block-file__button:hover {
+      background-color: #126bb0;
+      border-color: #126bb0; }
+  .button.has-highlight-color, .wp-block-buttons .wp-block-button .has-highlight-color.wp-block-button__link, .wp-block-file .has-highlight-color.wp-block-file__button, .button.has-color-highlight, .wp-block-buttons .wp-block-button .has-color-highlight.wp-block-button__link, .wp-block-file .has-color-highlight.wp-block-file__button, .button.highlight, .wp-block-buttons .wp-block-button .highlight.wp-block-button__link, .wp-block-file .highlight.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-highlight-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-highlight-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-highlight-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-highlight-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-highlight-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-color-highlight,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-highlight.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-highlight.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-highlight.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-highlight.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.highlight,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.highlight.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.highlight.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.highlight.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.highlight.wp-block-file__button {
+    color: #147bcd; }
+  .button.has-highlight-background-color, .wp-block-buttons .wp-block-button .has-highlight-background-color.wp-block-button__link, .wp-block-file .has-highlight-background-color.wp-block-file__button, .button.background-highlight, .wp-block-buttons .wp-block-button .background-highlight.wp-block-button__link, .wp-block-file .background-highlight.wp-block-file__button, .button.highlight-background, .wp-block-buttons .wp-block-button .highlight-background.wp-block-button__link, .wp-block-file .highlight-background.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.has-highlight-background-color,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-highlight-background-color.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-highlight-background-color.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-highlight-background-color.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-highlight-background-color.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.background-highlight,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-highlight.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-highlight.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-highlight.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-highlight.wp-block-file__button,
+  .gform_wrapper .gform_footer .gform_button.button.highlight-background,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.highlight-background.wp-block-button__link,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.highlight-background.wp-block-button__link,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.highlight-background.wp-block-file__button,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.highlight-background.wp-block-file__button {
+    background-color: #147bcd;
+    border-color: #147bcd; }
+    .button.has-highlight-background-color:hover, .wp-block-buttons .wp-block-button .has-highlight-background-color.wp-block-button__link:hover, .wp-block-file .has-highlight-background-color.wp-block-file__button:hover, .button.background-highlight:hover, .wp-block-buttons .wp-block-button .background-highlight.wp-block-button__link:hover, .wp-block-file .background-highlight.wp-block-file__button:hover, .button.highlight-background:hover, .wp-block-buttons .wp-block-button .highlight-background.wp-block-button__link:hover, .wp-block-file .highlight-background.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.has-highlight-background-color:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-highlight-background-color.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-highlight-background-color.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-highlight-background-color.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-highlight-background-color.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.background-highlight:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-highlight.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-highlight.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-highlight.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-highlight.wp-block-file__button:hover,
+    .gform_wrapper .gform_footer .gform_button.button.highlight-background:hover,
+    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.highlight-background.wp-block-button__link:hover,
+    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.highlight-background.wp-block-button__link:hover,
+    .gform_wrapper .gform_footer .wp-block-file .gform_button.highlight-background.wp-block-file__button:hover,
+    .wp-block-file .gform_wrapper .gform_footer .gform_button.highlight-background.wp-block-file__button:hover {
+      background-color: #1c8ee9;
+      border-color: #1c8ee9; }
+
+/* ==========================================================================
+   Font
+   ========================================================================== */
+p,
+ul {
+  font-family: "Source Sans Pro", sans-serif; }
+  @media (max-width: 600px) {
+    p br,
+    ul br {
+      display: none; } }
+
+/* ==========================================================================
+   General typeography
+   ========================================================================== */
+li {
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif; }
+  @media (max-width: 600px) {
+    li {
+      font-size: 16px; } }
+
+ol,
+ul {
+  margin: 0;
+  padding: 0; }
+
+hr {
+  border: none;
+  border-collapse: collapse;
+  border-top: 1px solid #eee;
+  clear: both;
+  margin: 30px auto;
+  width: 100%; }
+
+b,
+strong {
+  font-weight: 700; }
+
+mark {
+  background: #ddd;
+  color: #333; }
+
+/* ==========================================================================
+   Text alignment 
+   ========================================================================== */
+@media (max-width: 600px) {
+  .has-text-align-center,
+  .has-text-align-right,
+  .alignright,
+  .aligncenter {
+    float: none;
+    text-align: left; } }
+
+/* ==========================================================================
+   Font sizes
+   ========================================================================== */
+p {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6em; }
+  @media (max-width: 600px) {
+    p {
+      font-size: 16px; } }
+
+p.has-small-font-size {
+  font-size: 13px; }
+
+p.has-regular-font-size {
+  font-size: 18px; }
+  @media (max-width: 600px) {
+    p.has-regular-font-size {
+      font-size: 14px; } }
+
+p.has-large-font-size {
+  font-size: 22px; }
+  @media (max-width: 600px) {
+    p.has-large-font-size {
+      font-size: 18px; } }
+
+p.has-larger-font-size {
+  font-size: 26px; }
+  @media (max-width: 600px) {
+    p.has-larger-font-size {
+      font-size: 20px; } }
+
+/* ==========================================================================
+   Drop caps
+   ========================================================================== */
+p.has-drop-cap:not(:focus)::first-letter {
+  margin: 0.02em 0.08em 0 -0.08em; }
+
+p.has-larger-font-size.has-drop-cap:not(:focus)::first-letter,
+p.has-small-font-size.has-drop-cap:not(:focus)::first-letter {
+  margin-right: 0.01em; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+a {
+  color: #147bcd;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
+
+a:focus,
+a:hover {
+  color: #1689e4; }
+
+p.has-text-color a,
+p.has-background a {
+  color: inherit; }
+
+p.has-text-color a:focus,
+p.has-background a:focus,
+p.has-text-color a:hover,
+p.has-background a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+p.has-background.light-text a {
+  color: #fff;
+  text-decoration: underline; }
+
+/* ==========================================================================
+   Background colors
+   ========================================================================== */
+.has-background:not(.block-editor-rich-text__editable) {
+  padding: 25px 30px;
+  margin-bottom: 20px; }
+
+.has-background :last-child {
+  margin-bottom: 0; }
+
+.has-background.box-shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+
+/* ==========================================================================
+   Table of contents block
+   ========================================================================== */
+.wp-block-advanced-gutenberg-blocks-summary {
+  margin-bottom: 20px; }
+  .wp-block-advanced-gutenberg-blocks-summary > ul {
+    padding-top: 5px;
+    padding-left: 0;
+    margin-bottom: 0; }
+    .wp-block-advanced-gutenberg-blocks-summary > ul > li > a {
+      display: block;
+      margin-bottom: 5px; }
+    .wp-block-advanced-gutenberg-blocks-summary > ul > li > ul {
+      line-height: 1em;
+      padding-left: 0;
+      margin-bottom: 5px; }
+
+/* ==========================================================================
+   Normal blockquotes
+   ========================================================================== */
+.wp-block-quote {
+  border: none;
+  margin: 24px 0 36px;
+  padding: 0; }
+  .wp-block-quote p {
+    font-size: 21px;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 42px; }
+    .wp-block-quote p:last-of-type {
+      margin-bottom: 0; }
+  .wp-block-quote cite {
+    color: #403F3E;
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    font-style: italic;
+    text-align: left; }
+
+/* ==========================================================================
+   Large blockquotes
+   ========================================================================== */
+.wp-block-quote.is-style-large {
+  margin: 24px 0 30px;
+  padding: 0; }
+  .wp-block-quote.is-style-large p {
+    font-size: 28px; }
+  .wp-block-quote.is-style-large cite {
+    color: #403F3E;
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    font-style: italic;
+    text-align: left; }
+
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+.wp-block[data-align="center"] .wp-block-buttons .wp-block-button {
+  margin: 4px; }
+
+.wp-block[data-align="right"] .wp-block-buttons .wp-block-button {
+  margin: 4px 0 4px 4px; }
+
+.wp-block[data-align="left"] .wp-block-buttons .wp-block-button {
+  margin: 4px 4px 4px 0; }
+
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+.wp-block-buttons {
+  margin-bottom: 20px; }
+  .wp-block-buttons:last-child {
+    margin-bottom: 0; }
+  .wp-block-buttons .wp-block-button {
+    margin: 4px 4px 4px 0; }
+    @media (max-width: 600px) {
+      .wp-block-buttons .wp-block-button {
+        display: block;
+        width: 100%; } }
+    @media (max-width: 600px) {
+      .wp-block-buttons .wp-block-button .wp-block-button__link {
+        text-align: center;
+        display: block;
+        width: 100%; } }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-color {
+      color: #ffffff; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color {
+      background-color: #ffffff; }
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color:hover {
+        background-color: white;
+        border-color: white; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-color {
+      color: #f5f5f5; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color {
+      background-color: #f5f5f5; }
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color:hover {
+        background-color: white;
+        border-color: white; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-color {
+      color: #403F3E; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color {
+      background-color: #403F3E; }
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color:hover {
+        background-color: #525150;
+        border-color: #525150; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-color {
+      color: #111111; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color {
+      background-color: #111111; }
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color:hover {
+        background-color: #232323;
+        border-color: #232323; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-color {
+      color: #0f5790; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-background-color {
+      background-color: #0f5790; }
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-background-color:hover {
+        background-color: #126bb0;
+        border-color: #126bb0; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-color {
+      color: #147bcd; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-background-color {
+      background-color: #147bcd; }
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-background-color:hover {
+        background-color: #1c8ee9;
+        border-color: #1c8ee9; }
+    .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link {
+      background-color: transparent !important;
+      border-color: white !important;
+      color: white; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-white-color {
+        color: #ffffff; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-white-background-color {
+        border-color: #ffffff !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-white-background-color:hover {
+          background-color: white !important;
+          border-color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-light-color {
+        color: #f5f5f5; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-light-background-color {
+        border-color: #f5f5f5 !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-light-background-color:hover {
+          background-color: white !important;
+          border-color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-default-color {
+        color: #403F3E; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-default-background-color {
+        border-color: #403F3E !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-default-background-color:hover {
+          background-color: #525150 !important;
+          border-color: #525150 !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-dark-color {
+        color: #111111; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-dark-background-color {
+        border-color: #111111 !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-dark-background-color:hover {
+          background-color: #232323 !important;
+          border-color: #232323 !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-blue-color {
+        color: #0f5790; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-blue-background-color {
+        border-color: #0f5790 !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-blue-background-color:hover {
+          background-color: #126bb0 !important;
+          border-color: #126bb0 !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-highlight-color {
+        color: #147bcd; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-highlight-background-color {
+        border-color: #147bcd !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-highlight-background-color:hover {
+          background-color: #1c8ee9 !important;
+          border-color: #1c8ee9 !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+
+.wp-block-categories,
+.wp-block-categories ol,
+.wp-block-categories ul {
+  margin-left: 0;
+  padding-left: 0; }
+
+.wp-block-categories li {
+  list-style-type: none; }
+
+.wp-block-categories.aligncenter {
+  text-align: center; }
+
+.wp-block-categories-list.alignfull {
+  padding: 0 30px; }
+
+@media (min-width: 600px) {
+  .wp-block-columns:last-child > .wp-block-column {
+    margin-bottom: 0; } }
+
+.wp-block-columns:last-child > .wp-block-column:last-child {
+  margin-bottom: 0; }
+
+@media (max-width: 600px) {
+  .wp-block-columns {
+    margin-bottom: 0; } }
+
+.wp-block-columns .wp-block-column > :last-child:not(.block-list-appender) {
+  margin-bottom: 0; }
+
+@media (max-width: 600px) {
+  .wp-block-columns .wp-block-column {
+    margin-bottom: 30px; } }
+
+.entry-content .wp-block-columns:last-child {
+  margin-bottom: -50px; }
+  @media (max-width: 600px) {
+    .entry-content .wp-block-columns:last-child {
+      margin-bottom: 0; } }
+
+@media (min-width: 960px) {
+  .wp-block-column:not(:first-child) {
+    margin-left: 60px; } }
+
+/* ==========================================================================
+   Image alignment defaults
+   ========================================================================== */
+.wp-block-columns .wp-block-image {
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 600px) {
+    .wp-block-columns .wp-block-image {
+      margin-left: 0; } }
+
+/* ==========================================================================
+   Align full
+   ========================================================================== */
+.wp-block-cover.alignfull {
+  width: 100vw; }
+  .wp-block-cover.alignfull .wp-block-cover__inner-container {
+    max-width: 1200px; }
+
+/* ==========================================================================
+   Defaults
+   ========================================================================== */
+@media (max-width: 960px) {
+  .wp-block-cover {
+    min-height: auto; } }
+
+@media (max-width: 960px) {
+  .wp-block-cover .wp-block-cover__inner-container {
+    width: 100%;
+    padding: 30px;
+    max-width: 1200px; } }
+
+.wp-block-cover .wp-block-cover__inner-container :last-child {
+  margin-bottom: 0; }
+
+/* ==========================================================================
+   .full-height
+   ========================================================================== */
+@media (min-width: 960px) {
+  .wp-block-cover.full-height {
+    min-height: 100vh; } }
+
+.wp-block-file {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 15px; }
+  .wp-block-file a {
+    order: 1;
+    text-decoration: none; }
+  .wp-block-file a:not(.wp-block-file__button) {
+    color: #403F3E;
+    pointer-events: none; }
+  .wp-block-file .wp-block-file__button {
+    margin: 0 15px 0 0;
+    order: 0; }
+
+.wp-block-gallery {
+  margin-bottom: 15px; }
+  .wp-block-gallery ul.blocks-gallery-grid {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0; }
+  .wp-block-gallery:first-child ul.blocks-gallery-grid {
+    padding-top: 0; }
+  .wp-block-gallery .blocks-gallery-item figcaption {
+    text-align: center;
+    color: white; }
+  .wp-block-gallery figcaption {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -5px;
+    text-align: left;
+    display: block; }
+    .wp-block-gallery figcaption a {
+      color: white; }
+
+.wp-block[data-type="core/heading"] {
+  clear: both; }
+
+/* ==========================================================================
+   Headings used in the context of entry content
+   ========================================================================== */
+.entry-content > h2,
+.entry-content > h3,
+.wp-block-pb-accordion-item .entry-content > h1,
+.wp-block-pb-accordion-item .editor-post-title__block .entry-content > .editor-post-title__input,
+.editor-post-title__block .wp-block-pb-accordion-item .entry-content > .editor-post-title__input,
+.wp-block-pb-accordion-item .entry-content > h2,
+.wp-block-pb-accordion-item .entry-content > h3,
+.wp-block-pb-accordion-item .entry-content > h4,
+.entry-content > h4,
+.block-editor-block-list__layout.is-root-container > h2,
+.block-editor-block-list__layout.is-root-container > h3,
+.wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > h1,
+.wp-block-pb-accordion-item .editor-post-title__block .block-editor-block-list__layout.is-root-container > .editor-post-title__input,
+.editor-post-title__block .wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > .editor-post-title__input,
+.wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > h2,
+.wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > h3,
+.wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > h4,
+.block-editor-block-list__layout.is-root-container > h4 {
+  margin-top: 50px; }
+  .entry-content > h2:first-child,
+  .entry-content > h3:first-child,
+  .wp-block-pb-accordion-item .entry-content > h1:first-child,
+  .wp-block-pb-accordion-item .editor-post-title__block .entry-content > .editor-post-title__input:first-child,
+  .editor-post-title__block .wp-block-pb-accordion-item .entry-content > .editor-post-title__input:first-child,
+  .wp-block-pb-accordion-item .entry-content > h2:first-child,
+  .wp-block-pb-accordion-item .entry-content > h3:first-child,
+  .wp-block-pb-accordion-item .entry-content > h4:first-child,
+  .entry-content > h4:first-child,
+  .block-editor-block-list__layout.is-root-container > h2:first-child,
+  .block-editor-block-list__layout.is-root-container > h3:first-child,
+  .wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > h1:first-child,
+  .wp-block-pb-accordion-item .editor-post-title__block .block-editor-block-list__layout.is-root-container > .editor-post-title__input:first-child,
+  .editor-post-title__block .wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > .editor-post-title__input:first-child,
+  .wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > h2:first-child,
+  .wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > h3:first-child,
+  .wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container > h4:first-child,
+  .block-editor-block-list__layout.is-root-container > h4:first-child {
+    margin-top: 0; }
+
+.entry-content .wp-block-spacer + h2,
+.entry-content .wp-block-spacer + h3,
+.entry-content .wp-block-pb-accordion-item .wp-block-spacer + h1,
+.wp-block-pb-accordion-item .entry-content .wp-block-spacer + h1,
+.entry-content .wp-block-pb-accordion-item .editor-post-title__block .wp-block-spacer + .editor-post-title__input,
+.wp-block-pb-accordion-item .editor-post-title__block .entry-content .wp-block-spacer + .editor-post-title__input,
+.entry-content .editor-post-title__block .wp-block-pb-accordion-item .wp-block-spacer + .editor-post-title__input,
+.editor-post-title__block .wp-block-pb-accordion-item .entry-content .wp-block-spacer + .editor-post-title__input,
+.entry-content .wp-block-pb-accordion-item .wp-block-spacer + h2,
+.wp-block-pb-accordion-item .entry-content .wp-block-spacer + h2,
+.entry-content .wp-block-pb-accordion-item .wp-block-spacer + h3,
+.entry-content .wp-block-pb-accordion-item .wp-block-spacer + h4,
+.wp-block-pb-accordion-item .entry-content .wp-block-spacer + h4,
+.entry-content .wp-block-spacer + h4,
+.block-editor-block-list__layout.is-root-container .wp-block-spacer + h2,
+.block-editor-block-list__layout.is-root-container .wp-block-spacer + h3,
+.block-editor-block-list__layout.is-root-container .wp-block-pb-accordion-item .wp-block-spacer + h1,
+.wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container .wp-block-spacer + h1,
+.block-editor-block-list__layout.is-root-container .wp-block-pb-accordion-item .editor-post-title__block .wp-block-spacer + .editor-post-title__input,
+.wp-block-pb-accordion-item .editor-post-title__block .block-editor-block-list__layout.is-root-container .wp-block-spacer + .editor-post-title__input,
+.block-editor-block-list__layout.is-root-container .editor-post-title__block .wp-block-pb-accordion-item .wp-block-spacer + .editor-post-title__input,
+.editor-post-title__block .wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container .wp-block-spacer + .editor-post-title__input,
+.block-editor-block-list__layout.is-root-container .wp-block-pb-accordion-item .wp-block-spacer + h2,
+.wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container .wp-block-spacer + h2,
+.block-editor-block-list__layout.is-root-container .wp-block-pb-accordion-item .wp-block-spacer + h3,
+.block-editor-block-list__layout.is-root-container .wp-block-pb-accordion-item .wp-block-spacer + h4,
+.wp-block-pb-accordion-item .block-editor-block-list__layout.is-root-container .wp-block-spacer + h4,
+.block-editor-block-list__layout.is-root-container .wp-block-spacer + h4 {
+  margin-top: 0; }
+
+.wp-block-separator.is-style-default {
+  max-width: 100px; }
+
+figure.wp-block-image {
+  margin-bottom: 1.2em; }
+  figure.wp-block-image:last-child {
+    margin-bottom: 0; }
+  figure.wp-block-image figcaption {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: left; }
+
+/* ==========================================================================
+   Padding top so that it better lines up with text in alignleft and alignright situations
+   ========================================================================== */
+.entry-content > .wp-block-image figure.alignleft,
+.entry-content > .wp-block-image figure.alignright {
+  padding-top: 0.4em; }
+  @media (min-width: 600px) and (max-width: 960px) {
+    .entry-content > .wp-block-image figure.alignleft,
+    .entry-content > .wp-block-image figure.alignright {
+      max-width: 50%;
+      height: auto !important; } }
+  @media (max-width: 600px) {
+    .entry-content > .wp-block-image figure.alignleft,
+    .entry-content > .wp-block-image figure.alignright {
+      width: 100%; }
+      .entry-content > .wp-block-image figure.alignleft img,
+      .entry-content > .wp-block-image figure.alignright img {
+        width: 100%; } }
+
+.wp-block-latest-posts {
+  clear: both;
+  margin-left: 0; }
+
+.wp-block-latest-posts li {
+  list-style-type: none; }
+
+.wp-block-latest-posts.aligncenter {
+  text-align: center; }
+
+.wp-block-latest-posts.alignfull {
+  padding: 0 30px; }
+
+.entry-content ol:not([class]):not([class=""]),
+.entry-content ul:not([class]):not([class=""]),
+.block-editor-block-list__layout ol:not([class]):not([class=""]),
+.block-editor-block-list__layout ul:not([class]):not([class=""]) {
+  margin-bottom: 20px;
+  padding-left: 40px; }
+  .entry-content ol:not([class]):not([class=""]) li,
+  .entry-content ul:not([class]):not([class=""]) li,
+  .block-editor-block-list__layout ol:not([class]):not([class=""]) li,
+  .block-editor-block-list__layout ul:not([class]):not([class=""]) li {
+    margin-bottom: 5px; }
+  .entry-content ol:not([class]):not([class=""]) ol,
+  .entry-content ol:not([class]):not([class=""]) ul,
+  .entry-content ul:not([class]):not([class=""]) ol,
+  .entry-content ul:not([class]):not([class=""]) ul,
+  .block-editor-block-list__layout ol:not([class]):not([class=""]) ol,
+  .block-editor-block-list__layout ol:not([class]):not([class=""]) ul,
+  .block-editor-block-list__layout ul:not([class]):not([class=""]) ol,
+  .block-editor-block-list__layout ul:not([class]):not([class=""]) ul {
+    margin-bottom: 0; }
+
+.block-editor-block-list__block {
+  margin-bottom: 20px; }
+
+/* ==========================================================================
+   Mobile padding
+   ========================================================================== */
+@media (max-width: 600px) {
+  .wp-block-media-text .wp-block-media-text__content,
+  .wp-block-media-text .wp-block-media-content__text {
+    padding: 0; } }
+
+@media (max-width: 600px) {
+  .wp-block-media-text > figure > img {
+    width: auto; } }
+
+[data-type="core/spacer"] {
+  background-color: #f0f0f0; }
+
+@media (max-width: 600px) {
+  .wp-block-spacer {
+    max-height: 30px; } }
+
+.wp-block-table {
+  margin-bottom: 25px; }
+  .wp-block-table table {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+    border: none;
+    margin-bottom: 10px;
+    table-layout: fixed;
+    width: 100%; }
+    .wp-block-table table td,
+    .wp-block-table table th {
+      padding: 8px 15px;
+      border: none;
+      border-top: 1px solid rgba(64, 63, 62, 0.2);
+      border-bottom: 1px solid rgba(64, 63, 62, 0.2);
+      color: #403F3E;
+      line-height: 1em;
+      font-size: 18px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-width: 1px; }
+      @media (min-width: 600px) and (max-width: 960px) {
+        .wp-block-table table td,
+        .wp-block-table table th {
+          font-size: 15px;
+          padding: 5px; } }
+      @media (max-width: 600px) {
+        .wp-block-table table td,
+        .wp-block-table table th {
+          font-size: 15px;
+          padding: 5px; } }
+    .wp-block-table table th {
+      background-color: black;
+      color: white;
+      font-weight: bold; }
+
+.inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.elodin-section > .section-content, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-container > .gb-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-columns > .gb-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-getwid-section > .wp-block-getwid-section__wrapper > .wp-block-getwid-section__inner-wrapper, body.first-block-is-section .entry-content > :first-child.wp-block-uagb-section > .uagb-section__inner-wrap {
+  margin-top: 76px; }
+  @media (min-width: 600px) and (max-width: 960px) {
+    .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.elodin-section > .section-content, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-container > .gb-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-columns > .gb-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-getwid-section > .wp-block-getwid-section__wrapper > .wp-block-getwid-section__inner-wrapper, body.first-block-is-section .entry-content > :first-child.wp-block-uagb-section > .uagb-section__inner-wrap {
+      margin-top: 70px; } }
+  @media (max-width: 600px) {
+    .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.elodin-section > .section-content, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-container > .gb-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-columns > .gb-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-getwid-section > .wp-block-getwid-section__wrapper > .wp-block-getwid-section__inner-wrapper, body.first-block-is-section .entry-content > :first-child.wp-block-uagb-section > .uagb-section__inner-wrap {
+      margin-top: 70px; } }
+
+body.first-block-is-section .site-inner {
+  margin-top: 0 !important; }
+
+@media (min-width: 960px) {
+  body.first-block-is-section .entry-content > :first-child.checkerboard > .checkerboard-content {
+    margin-top: 76px; } }
+
+@media (min-width: 600px) and (max-width: 960px) {
+  body.first-block-is-section .entry-content > :first-child.checkerboard {
+    margin-top: 70px; } }
+
+@media (max-width: 600px) {
+  body.first-block-is-section .entry-content > :first-child.checkerboard {
+    margin-top: 70px; } }
+
+@media (min-width: 960px) {
+  body.first-block-is-section .entry-content > :first-child.gutenberg-section {
+    padding-top: 10vh;
+    padding-bottom: 10vh; } }
+
+@media (min-width: 1200px) {
+  body.first-block-is-section .entry-content > :first-child.gutenberg-section {
+    padding-top: 15vh;
+    padding-bottom: 15vh; } }
+
+body.last-block-is-section .content > .entry {
+  margin-bottom: 0; }
+
+.wp-block-pb-accordion-item {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 0; }
+  .wp-block-pb-accordion-item:last-of-type {
+    border: none; }
+  .wp-block-pb-accordion-item h1, .wp-block-pb-accordion-item .editor-post-title__block .editor-post-title__input, .editor-post-title__block .wp-block-pb-accordion-item .editor-post-title__input,
+  .wp-block-pb-accordion-item h2,
+  .wp-block-pb-accordion-item h1,
+  .wp-block-pb-accordion-item .editor-post-title__block .editor-post-title__input,
+  .editor-post-title__block .wp-block-pb-accordion-item .editor-post-title__input,
+  .wp-block-pb-accordion-item h2,
+  .wp-block-pb-accordion-item h3,
+  .wp-block-pb-accordion-item h4,
+  .wp-block-pb-accordion-item h4 {
+    text-transform: none;
+    font-weight: normal;
+    padding: 20px 50px 20px 0;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    transition: .3s all ease; }
+    .wp-block-pb-accordion-item h1:focus, .wp-block-pb-accordion-item .editor-post-title__block .editor-post-title__input:focus, .editor-post-title__block .wp-block-pb-accordion-item .editor-post-title__input:focus,
+    .wp-block-pb-accordion-item h2:focus,
+    .wp-block-pb-accordion-item h1:focus,
+    .wp-block-pb-accordion-item .editor-post-title__block .editor-post-title__input:focus,
+    .editor-post-title__block .wp-block-pb-accordion-item .editor-post-title__input:focus,
+    .wp-block-pb-accordion-item h2:focus,
+    .wp-block-pb-accordion-item h3:focus,
+    .wp-block-pb-accordion-item h4:focus,
+    .wp-block-pb-accordion-item h4:focus {
+      outline: none; }
+  .wp-block-pb-accordion-item .c-accordion__content {
+    background-color: #f5f5f5;
+    padding: 40px; }
+    .wp-block-pb-accordion-item .c-accordion__content > :last-child {
+      margin-bottom: 0; }
+  .wp-block-pb-accordion-item .c-accordion__title:after {
+    content: "\f347";
+    font-family: 'dashicons';
+    transition: .3s all ease;
+    margin-top: 7px; }
+  .wp-block-pb-accordion-item.is-open .c-accordion__title:after {
+    transform: rotate(180deg) translateY(50%); }
