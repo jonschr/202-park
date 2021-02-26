@@ -103,6 +103,8 @@
     z-index: 50;
 
     @include notdesktop {
+        min-height: 75px;
+
         &:not(.header-at-top) {
             top: 0;
         }
@@ -185,7 +187,10 @@
         padding-top: 25px;
         transition: .3s all ease;
 
-        @include notdesktop {}
+        @include notdesktop {
+            padding-top: 12px !important;
+            padding-bottom: 12px !important;
+        }
 
         img.custom-logo {
             transition: .3s all ease;
@@ -194,7 +199,8 @@
             display: block;
 
             @include notdesktop {
-                max-height: 66px;
+                max-height: 56px;
+                max-width: 150px;
                 margin-left: 0;
                 text-align: left;
             }
@@ -207,19 +213,6 @@
     padding-bottom: 30px;
     padding-top: 30px;
     width: 100%;
-
-    @include notdesktop {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        max-width: 200px;
-
-        img {
-            margin-left: 0;
-
-            // max-width: 130px;
-
-        }
-    }
 }
 
 .wp-custom-logo .title-area img {

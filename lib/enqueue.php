@@ -78,6 +78,13 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
         CHILD_THEME_VERSION,
         true
     );
+    
+    wp_enqueue_script('hamburger',
+        get_stylesheet_directory_uri() . '/js/hamburger.js',
+        array('jquery'),
+        CHILD_THEME_VERSION,
+        true
+    );
 
     // wp_enqueue_script(
     // 	'smoothscroll',

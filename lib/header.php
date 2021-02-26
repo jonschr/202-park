@@ -57,6 +57,37 @@ unregister_sidebar( 'header-right' );
 remove_filter( 'genesis_nav_items', 'genesis_nav_right', 10, 2 );
 remove_filter( 'wp_nav_menu_items', 'genesis_nav_right', 10, 2 );
 
+
+////////////////////
+// HAMBURGER MENU //
+////////////////////
+
+add_action( 'genesis_header', 'elodin_output_hamburger', 13 );
+function elodin_output_hamburger() {
+	echo '<a href="#" class="open-hamburger-nav"><span></span><span></span><span></span></a>';
+}
+
+add_action( 'genesis_header', 'elodin_menu_close', 14 );
+function elodin_menu_close() {
+	echo '</div>'; // .menu-wrap 
+}
+
+//* Register the widget area
+genesis_register_sidebar( array(
+	'id'		=> 'hamburger-overlay',
+	'name'		=> __( 'Hamburger overlay (desktop)', 'sixcanyon' ),
+	'description'	=> __( 'This displays after opening the hamburger menu.', 'sixcanyon' ),
+) );
+
+add_action( 'genesis_after', 'elodin_output_menu_overlay', 999 );
+function elodin_output_menu_overlay() {
+	genesis_widget_area ('hamburger-overlay', array(
+        'before' => '<div class="hamburger-overlay" data-open="false"><a href="#" class="close-hamburger-nav"><span></span><span></span></a><div class="wrap">',
+        'after' => '</div></div>',
+	) );
+}
+
+
 /////////////////////
 // RESPONSIVE MENU //
 /////////////////////
