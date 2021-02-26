@@ -13,7 +13,7 @@ h6 {
     margin: 0 0 20px;
     clear: both;
     color: $dark;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Libre Baskerville', serif;
 
     br {
         @include notdesktop {
@@ -23,14 +23,14 @@ h6 {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 70px;
 
     @include tablet {
-        font-size: 35px;
+        font-size: 55px;
     }
 
     @include mobile {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
