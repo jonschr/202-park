@@ -4,7 +4,8 @@
 
 .preheader {
     background-color: $bluelight;
-    padding: 0 20px;
+    padding: 15px 20px;
+    font-family: 'Lato', sans-serif;
 
     @include tablet {
         display: none;
@@ -26,9 +27,15 @@
 
     }
 
+    .button {
+        border-color: white;
+        background-color: transparent;
+        padding: 15px 20px;
+    }
+
     .widget {
         margin: 0 20px;
-        color: rgba(white, 0.7);
+        color: white;
 
         &:first-child {
             margin-left: 0;
@@ -87,8 +94,8 @@
    ========================================================================== */
 
 .site-header {
-    background-color: rgba(white, 0.95);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    background-color: $dark;
+    // box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     padding: 0;
     transition: .3s all ease;
     width: 100%;
@@ -197,8 +204,8 @@
 
 .wp-custom-logo .title-area {
     // max-width: 350px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     width: 100%;
 
     @include notdesktop {
@@ -256,7 +263,7 @@
    ========================================================================== */
 
 .site-header.header-scrolled {
-    background: white;
+    background: $dark;
     box-shadow: 0 0 20px 0 rgba(black, 0.15);
 
     .preheader {

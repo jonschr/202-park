@@ -41,10 +41,18 @@
     }
 }
 
-@include desktop {
-    .wp-block-column:not(:first-child) {
-        margin-left: 60px;
+.wp-block-column:not(:first-child) {
+    @include desktop {
+        margin-left: 120px;
     }
+
+    // @include tablet {
+    //     margin-left: 60px;
+    // }
+}
+
+.block-editor-block-list__block.wp-block-column:not(:first-child) {
+    margin-left: 120px;
 }
 
 /* ==========================================================================
@@ -58,6 +66,18 @@
 
         @include mobile {
             margin-left: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Background color
+   ========================================================================== */
+
+.wp-block-columns {
+    &.has-background {
+        @include desktop {
+            padding: 50px;
         }
     }
 }
