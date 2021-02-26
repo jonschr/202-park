@@ -772,32 +772,32 @@ mark {
 p {
   margin: 0 0 20px;
   padding: 0;
-  font-size: 18px;
-  line-height: 1.6em; }
+  font-size: 22px;
+  line-height: 1.8em; }
   @media (max-width: 600px) {
     p {
       font-size: 16px; } }
 
 p.has-small-font-size {
-  font-size: 13px; }
+  font-size: 18px; }
 
 p.has-regular-font-size {
-  font-size: 18px; }
-  @media (max-width: 600px) {
-    p.has-regular-font-size {
-      font-size: 14px; } }
-
-p.has-large-font-size {
   font-size: 22px; }
   @media (max-width: 600px) {
-    p.has-large-font-size {
+    p.has-regular-font-size {
       font-size: 18px; } }
 
-p.has-larger-font-size {
+p.has-large-font-size {
   font-size: 26px; }
   @media (max-width: 600px) {
-    p.has-larger-font-size {
+    p.has-large-font-size {
       font-size: 20px; } }
+
+p.has-larger-font-size {
+  font-size: 35px; }
+  @media (max-width: 600px) {
+    p.has-larger-font-size {
+      font-size: 26px; } }
 
 /* ==========================================================================
    Drop caps
