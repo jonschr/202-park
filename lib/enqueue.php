@@ -58,6 +58,12 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
         CHILD_THEME_VERSION,
         true
     );
+    
+    wp_register_script( 'expand',
+        get_stylesheet_directory_uri() . '/js/expand.js',
+        array(),
+        CHILD_THEME_VERSION
+    );
 
     wp_localize_script( 'genesis-sample-responsive-menu',
         'genesis_responsive_menu',

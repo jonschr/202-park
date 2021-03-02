@@ -182,7 +182,7 @@ h6 {
       display: none; } }
 
 h1, .editor-post-title__block .editor-post-title__input {
-  font-size: 75px;
+  font-size: 60px;
   color: #1f313b; }
   @media (min-width: 600px) and (max-width: 960px) {
     h1, .editor-post-title__block .editor-post-title__input {
@@ -192,7 +192,7 @@ h1, .editor-post-title__block .editor-post-title__input {
       font-size: 40px; } }
 
 h2 {
-  font-size: 70px;
+  font-size: 50px;
   color: #1f313b; }
   @media (min-width: 600px) and (max-width: 960px) {
     h2 {
@@ -214,7 +214,7 @@ h3,
   font-family: 'Lato', sans-serif; }
 
 h4 {
-  font-size: 38px;
+  font-size: 24px;
   text-transform: uppercase;
   color: #bca664;
   font-family: 'Lato', sans-serif; }
@@ -275,7 +275,7 @@ h2.entry-title {
   background-color: #bca664;
   letter-spacing: 0.1em;
   font-size: 14px;
-  padding: 30px 30px;
+  padding: 25px 25px;
   line-height: 1em;
   position: static;
   transition: .3s all ease;
@@ -772,29 +772,29 @@ mark {
 p {
   margin: 0 0 20px;
   padding: 0;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.8em; }
   @media (max-width: 600px) {
     p {
       font-size: 16px; } }
 
 p.has-small-font-size {
-  font-size: 18px; }
+  font-size: 16px; }
 
 p.has-regular-font-size {
-  font-size: 22px; }
+  font-size: 18px; }
   @media (max-width: 600px) {
     p.has-regular-font-size {
       font-size: 18px; } }
 
 p.has-large-font-size {
-  font-size: 26px; }
+  font-size: 22px; }
   @media (max-width: 600px) {
     p.has-large-font-size {
       font-size: 20px; } }
 
 p.has-larger-font-size {
-  font-size: 35px; }
+  font-size: 26px; }
   @media (max-width: 600px) {
     p.has-larger-font-size {
       font-size: 26px; } }

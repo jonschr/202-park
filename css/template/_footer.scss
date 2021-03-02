@@ -5,7 +5,7 @@
 .footer-widgets {
     background-color: $blue;
     clear: both;
-    padding: 60px 0;
+    padding: 60px 0 15px;
 
     p {
         font-size: 14px;
@@ -27,7 +27,7 @@
     .widget-title {
         @extend h3;
 
-        color: white !important;
+        color: $highlight !important;
     }
 
     >.wrap {
@@ -35,7 +35,7 @@
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        max-width: calc(#{$defaultcontentwidth} + 60px);
+        max-width: calc(800px + 60px);
 
         @include tablet {
             flex-flow: row wrap;
@@ -120,6 +120,15 @@
     padding: 30px;
     text-align: center;
     color: white;
+    text-transform: uppercase;
+
+    @include desktop {
+        padding-bottom: 8%;
+        background-image: url('/wp-content/themes/202-park/images/footerbkg.svg');
+        background-size: contain;
+        background-position: bottom center;
+        background-repeat: repeat-x;
+    }
 
     .wrap {
         max-width: $defaultcontentwidth;
@@ -127,9 +136,15 @@
         margin-right: auto;
     }
 
+    img {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
     p {
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: bold;
 
         &:last-child {
             margin-bottom: 0;
@@ -141,6 +156,8 @@
         padding-left: 10px;
         padding-right: 10px;
         display: inline-block;
+        color: white;
+        text-decoration: none;
     }
 }
 

@@ -1,0 +1,27 @@
+.attractions-items {
+    .type-attractions {
+        box-shadow: 0 0 10px 0 rgba(black, 0.03);
+        background-color: white;
+        padding: 30px;
+        width: calc(100% / 3 - 20px);
+
+        .featured-image {
+            display: none;
+        }
+    }
+}
+
+.attractions-filters {
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &.active,
+        &:hover {
+            color: $blue;
+        }
+    }
+}

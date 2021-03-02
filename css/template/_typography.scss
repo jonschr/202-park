@@ -73,7 +73,7 @@ mark {
 p {
     margin: 0 0 20px;
     padding: 0;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.8em;
 
     @include mobile {
@@ -83,11 +83,11 @@ p {
 
 
 p.has-small-font-size {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 p.has-regular-font-size {
-    font-size: 22px;
+    font-size: 18px;
 
     @include mobile {
         font-size: 18px;
@@ -95,7 +95,7 @@ p.has-regular-font-size {
 }
 
 p.has-large-font-size {
-    font-size: 26px;
+    font-size: 22px;
 
     @include mobile {
         font-size: 20px;
@@ -103,7 +103,7 @@ p.has-large-font-size {
 }
 
 p.has-larger-font-size {
-    font-size: 35px;
+    font-size: 26px;
 
     @include mobile {
         font-size: 26px;
