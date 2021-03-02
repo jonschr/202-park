@@ -1,0 +1,30 @@
+.loop-container.loop-layout-specials {
+    align-items: stretch;
+    align-content: stretch;
+
+    .entry {
+        background-color: white;
+        padding: 30px;
+        margin-bottom: 20px !important;
+        border-radius: 3px;
+        box-shadow: 0 0 10px 0 rgba(black, 0.03);
+    }
+
+    .excerpt {
+        @extend p;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .terms {
+        font-style: italic;
+        font-size: 16px;
+        opacity: 0.7;
+    }
+
+    h3 {
+        // font-family: 'garage';
+        // font-size: 40px;
+        // font-weight: normal;
+    }
+}

@@ -1412,6 +1412,24 @@ figure.wp-block-image {
       color: white;
       font-weight: bold; }
 
+/* ==========================================================================
+   The amenities expanding functionality
+   ========================================================================== */
+.wp-block-columns ul:not(.gform_fields) {
+  padding-left: 0 !important;
+  margin-left: 0; }
+  .wp-block-columns ul:not(.gform_fields) li {
+    list-style: none;
+    letter-spacing: 0.05em;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    line-height: 1.2em; }
+  .wp-block-columns ul:not(.gform_fields).showall li {
+    display: block !important; }
+
+.wp-block-columns ul:not(.gform_fields) li:nth-of-type(1), .wp-block-columns ul:not(.gform_fields) li:nth-of-type(2), .wp-block-columns ul:not(.gform_fields) li:nth-of-type(3), .wp-block-columns ul:not(.gform_fields) li:nth-of-type(4) {
+  display: block; }
+
 .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.elodin-section > .section-content, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-container > .gb-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-columns > .gb-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-getwid-section > .wp-block-getwid-section__wrapper > .wp-block-getwid-section__inner-wrapper, body.first-block-is-section .entry-content > :first-child.wp-block-uagb-section > .uagb-section__inner-wrap {
   margin-top: 218px; }
   @media (min-width: 600px) and (max-width: 960px) {

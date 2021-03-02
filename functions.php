@@ -115,3 +115,6 @@ function elodin_disable_fullscreen_mode() {
 	
 }
 
+require_once( 'lib/expand.php' );
+// require_once( 'layout/tour.php' );
+require_once( 'layout/specials.php' );

@@ -7,6 +7,14 @@
     clear: both;
     padding: 60px 0;
 
+    p {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        line-height: 1.4em;
+    }
+
     @include notdesktop {
         text-align: left;
         padding: 15px 30px;
@@ -19,7 +27,7 @@
     .widget-title {
         @extend h3;
 
-        color: white;
+        color: white !important;
     }
 
     >.wrap {
@@ -54,6 +62,17 @@
 
     .widget:last-child {
         margin-bottom: 0;
+    }
+
+    .menu {
+        li {
+            display: block;
+
+            a {
+                padding: 5px 0;
+                line-height: 1.4em;
+            }
+        }
     }
 }
 
@@ -96,10 +115,11 @@
    ========================================================================== */
 
 .site-footer {
-    border-top: 1px solid $light;
-    background-color: #fff;
+    // border-top: 1px solid $light;
+    background-color: $blue;
     padding: 30px;
     text-align: center;
+    color: white;
 
     .wrap {
         max-width: $defaultcontentwidth;
@@ -109,10 +129,18 @@
 
     p {
         text-align: center;
+        font-size: 16px;
 
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    a,
+    span.fakelink {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: inline-block;
     }
 }
 
