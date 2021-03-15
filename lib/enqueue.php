@@ -85,6 +85,13 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
         true
     );
     
+    wp_enqueue_script('inview',
+        get_stylesheet_directory_uri() . '/js/inview.js',
+        array('jquery'),
+        CHILD_THEME_VERSION,
+        true
+    );
+    
     wp_enqueue_script('hamburger',
         get_stylesheet_directory_uri() . '/js/hamburger.js',
         array('jquery'),

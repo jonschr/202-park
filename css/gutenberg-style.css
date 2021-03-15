@@ -866,6 +866,25 @@ p.has-background.light-text a {
       padding-left: 0;
       margin-bottom: 5px; }
 
+@media (min-width: 600px) {
+  .is-style-circle:before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+    display: block;
+    border-radius: 100%;
+    transform: translateX(-40%) translateY(-30%) rotate(-90deg);
+    border: 5px solid transparent;
+    border-color: #ffffff transparent transparent #ffffff;
+    transition: 1s all ease;
+    opacity: 0; }
+  .is-style-circle.animate:before {
+    opacity: 1;
+    transform: translateX(-40%) translateY(-30%);
+    border-color: #bca664 transparent transparent #bca664; } }
+
 /* ==========================================================================
    Normal blockquotes
    ========================================================================== */

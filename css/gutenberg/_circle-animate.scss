@@ -1,0 +1,28 @@
+.is-style-circle {
+    @include notmobile {
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            opacity: 0;
+            // background-color: red;
+            display: block;
+            border-radius: 100%;
+            transform: translateX(-40%) translateY(-30%) rotate(-90deg);
+            border: 5px solid transparent;
+            border-color: $white transparent transparent $white;
+            transition: 1s all ease;
+            opacity: 0;
+        }
+
+        &.animate {
+            &:before {
+                opacity: 1;
+                transform: translateX(-40%) translateY(-30%);
+                border-color: $highlight transparent transparent $highlight;
+            }
+        }
+    }
+}
