@@ -1,0 +1,64 @@
+body .floorplangrid {
+    .filters {
+        li {
+            margin: 2px;
+
+            @include mobile {
+                margin: 2px 0;
+            }
+
+            a {
+                background-color: $dark;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-size: 13px;
+
+                &:hover,
+                &.active {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+
+    .floorplan {
+
+        h3 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: $blue;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+        }
+
+        p {
+            line-height: 1.2em;
+        }
+
+        p.floorplangrid__rent_range {
+            font-weight: bold;
+            font-size: 22px;
+            padding-top: 10px;
+            color: $blue;
+        }
+
+        .buttons {
+            a.floorplangrid__button {
+                background-color: $dark;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-size: 13px;
+                padding: 15px 25px;
+
+                &:hover {
+                    background-color: $blue;
+
+                }
+            }
+        }
+    }
+}
