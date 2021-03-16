@@ -15,20 +15,13 @@
             opacity: 0;
         }
 
-        &.animate {
+        &.animate,
+        .block-editor-rich-text__editable {
             &:before {
                 opacity: 1;
                 transform: translateX(-40%) translateY(-30%);
                 border-color: $highlight transparent transparent $highlight;
             }
         }
-    }
-}
-
-.editor-styles-wrapper {
-    .is-style-circle:before {
-        opacity: 1 !important;
-        transform: translateX(-40%) translateY(-30%) !important;
-        border-color: $highlight transparent transparent $highlight !important;
     }
 }

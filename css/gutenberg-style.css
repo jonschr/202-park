@@ -1224,15 +1224,11 @@ p.has-background.light-text a {
     border-color: #ffffff transparent transparent #ffffff;
     transition: 1s all ease;
     opacity: 0; }
-  .is-style-circle.animate:before {
+  .is-style-circle.animate:before,
+  .is-style-circle .block-editor-rich-text__editable:before {
     opacity: 1;
     transform: translateX(-40%) translateY(-30%);
     border-color: #bca664 transparent transparent #bca664; } }
-
-.editor-styles-wrapper .is-style-circle:before {
-  opacity: 1 !important;
-  transform: translateX(-40%) translateY(-30%) !important;
-  border-color: #bca664 transparent transparent #bca664 !important; }
 
 .wp-block[data-type="core/heading"] {
   clear: both; }
