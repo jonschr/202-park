@@ -1217,7 +1217,6 @@ p.has-background.light-text a {
     position: absolute;
     width: 70px;
     height: 70px;
-    opacity: 0;
     display: block;
     border-radius: 100%;
     transform: translateX(-40%) translateY(-30%) rotate(-90deg);
