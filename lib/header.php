@@ -67,9 +67,9 @@ function elodin_output_hamburger() {
 	echo '<a href="#" class="open-hamburger-nav"><span></span><span></span><span></span></a>';
 }
 
-add_action( 'genesis_header', 'elodin_menu_close', 14 );
+// add_action( 'genesis_header', 'elodin_menu_close', 14 );
 function elodin_menu_close() {
-	echo '</div>'; // .menu-wrap 
+	echo 'hello world!</div>'; // .menu-wrap 
 }
 
 //* Register the widget area
