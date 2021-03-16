@@ -1,0 +1,23 @@
+@include notmobile {
+    .wp-block-image {
+        &.is-style-badge {
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 130px;
+                height: 130px;
+                background-image: url('../images/badge.svg');
+                background-size: contain;
+                background-position: center center;
+                display: block;
+                left: calc(-130px / 3);
+                bottom: calc(-130px / 3);
+
+            }
+        }
+    }
+}

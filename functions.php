@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', '202 Park' );
 define( 'CHILD_THEME_URL', 'https://elod.in' );
-define( 'CHILD_THEME_VERSION', '0.4' );
+define( 'CHILD_THEME_VERSION', '0.5' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -120,6 +120,15 @@ add_action('enqueue_block_editor_assets', function() {
 	wp_enqueue_script(
 		'elodin-heading-attributes', 
 		get_stylesheet_directory_uri() . '/js/headingattributes.js', 
+		['wp-blocks']
+	);
+});
+
+//* Add image badge attributes
+add_action('enqueue_block_editor_assets', function() {
+	wp_enqueue_script(
+		'elodin-image-attributes', 
+		get_stylesheet_directory_uri() . '/js/imageattributes.js', 
 		['wp-blocks']
 	);
 });

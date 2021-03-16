@@ -866,25 +866,6 @@ p.has-background.light-text a {
       padding-left: 0;
       margin-bottom: 5px; }
 
-@media (min-width: 600px) {
-  .is-style-circle:before {
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    opacity: 0;
-    display: block;
-    border-radius: 100%;
-    transform: translateX(-40%) translateY(-30%) rotate(-90deg);
-    border: 5px solid transparent;
-    border-color: #ffffff transparent transparent #ffffff;
-    transition: 1s all ease;
-    opacity: 0; }
-  .is-style-circle.animate:before {
-    opacity: 1;
-    transform: translateX(-40%) translateY(-30%);
-    border-color: #bca664 transparent transparent #bca664; } }
-
 /* ==========================================================================
    Normal blockquotes
    ========================================================================== */
@@ -1230,6 +1211,25 @@ p.has-background.light-text a {
     .wp-block-gallery figcaption a {
       color: white; }
 
+@media (min-width: 600px) {
+  .is-style-circle:before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+    display: block;
+    border-radius: 100%;
+    transform: translateX(-40%) translateY(-30%) rotate(-90deg);
+    border: 5px solid transparent;
+    border-color: #ffffff transparent transparent #ffffff;
+    transition: 1s all ease;
+    opacity: 0; }
+  .is-style-circle.animate:before {
+    opacity: 1;
+    transform: translateX(-40%) translateY(-30%);
+    border-color: #bca664 transparent transparent #bca664; } }
+
 .wp-block[data-type="core/heading"] {
   clear: both; }
 
@@ -1307,6 +1307,23 @@ p.has-background.light-text a {
 
 .wp-block-separator.is-style-default {
   max-width: 100px; }
+
+@media (min-width: 600px) {
+  .wp-block-image.is-style-badge {
+    position: relative; }
+    .wp-block-image.is-style-badge:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 130px;
+      height: 130px;
+      background-image: url("../images/badge.svg");
+      background-size: contain;
+      background-position: center center;
+      display: block;
+      left: calc(-130px / 3);
+      bottom: calc(-130px / 3); } }
 
 figure.wp-block-image {
   margin-bottom: 1.2em; }
