@@ -10,17 +10,16 @@
             border-radius: 100%;
             transform: translateX(-40%) translateY(-30%) rotate(-90deg);
             border: 5px solid transparent;
-            border-color: $white transparent transparent $white;
+            border-color: $highlight transparent transparent $highlight;
             transition: 1s all ease;
             opacity: 0;
         }
 
         &.animate,
-        .block-editor-rich-text__editable {
+        &.block-editor-rich-text__editable {
             &:before {
                 opacity: 1;
                 transform: translateX(-40%) translateY(-30%);
-                border-color: $highlight transparent transparent $highlight;
             }
         }
     }

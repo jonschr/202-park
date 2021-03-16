@@ -1221,14 +1221,12 @@ p.has-background.light-text a {
     border-radius: 100%;
     transform: translateX(-40%) translateY(-30%) rotate(-90deg);
     border: 5px solid transparent;
-    border-color: #ffffff transparent transparent #ffffff;
+    border-color: #bca664 transparent transparent #bca664;
     transition: 1s all ease;
     opacity: 0; }
-  .is-style-circle.animate:before,
-  .is-style-circle .block-editor-rich-text__editable:before {
+  .is-style-circle.animate:before, .is-style-circle.block-editor-rich-text__editable:before {
     opacity: 1;
-    transform: translateX(-40%) translateY(-30%);
-    border-color: #bca664 transparent transparent #bca664; } }
+    transform: translateX(-40%) translateY(-30%); } }
 
 .wp-block[data-type="core/heading"] {
   clear: both; }
