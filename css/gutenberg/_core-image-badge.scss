@@ -5,16 +5,15 @@
         &:before {
             content: "";
             position: absolute;
-            bottom: 0 !important;
-            left: 0 !important;
             width: 130px;
             height: 130px;
             background-image: url('../images/badge.svg');
             background-size: contain;
             background-position: center center;
             display: block;
-            left: calc(-130px / 3);
-            bottom: calc(-130px / 3);
+            left: calc(-130px / 3) !important;
+            bottom: calc(-130px / 3) !important;
+            z-index: 20;
 
         }
     }
