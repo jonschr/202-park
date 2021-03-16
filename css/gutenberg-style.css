@@ -1311,7 +1311,7 @@ p.has-background.light-text a {
 @media (min-width: 600px) {
   .is-style-badge {
     position: relative; }
-    .is-style-badge:after {
+    .is-style-badge:before {
       content: "";
       position: absolute;
       bottom: 0 !important;

@@ -2,7 +2,7 @@
     &.is-style-badge {
         position: relative;
 
-        &:after {
+        &:before {
             content: "";
             position: absolute;
             bottom: 0 !important;
