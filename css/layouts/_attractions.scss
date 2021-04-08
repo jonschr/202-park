@@ -1,9 +1,20 @@
 .attractions-items {
+
+    @include mobile {
+        padding-top: 15px;
+    }
+
     .type-attractions {
         box-shadow: 0 0 10px 0 rgba(black, 0.03);
         background-color: white;
         padding: 30px;
         width: calc(100% / 3 - 20px);
+
+        @include mobile {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin-bottom: 10px;
+        }
 
         .featured-image {
             display: none;
@@ -15,17 +26,25 @@
     }
 }
 
-.attractions-filters {
+body .attractions-wrap ul.attractions-filters {
     text-align: center;
 
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
+    li {
 
-        &.active,
-        &:hover {
-            color: $blue;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            @include mobile {
+                padding: 5px;
+                font-size: 13px;
+            }
+
+            &.active,
+            &:hover {
+                color: $blue;
+            }
         }
     }
 }
