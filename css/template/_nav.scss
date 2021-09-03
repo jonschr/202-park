@@ -148,7 +148,7 @@
         padding-left: 15px;
         z-index: 99;
 
-        border-top: 1px solid #eee;
+        // border-top: 1px solid #eee;
 
         @include desktop {
             opacity: 0;
@@ -158,24 +158,28 @@
         }
 
         a {
-            background-color: #fff;
+            background-color: $highlight;
             font-size: 14px;
             position: relative;
             word-wrap: break-word;
             color: $default;
-            border: 1px solid #eee;
+            // border: 1px solid #eee;
             border-top: 0;
 
             @include desktop {
+                padding-left: 20px;
+                padding-right: 20px;
                 padding-bottom: 15px;
                 padding-top: 15px;
             }
         }
 
         .current-menu-item:focus>a,
-        .current-menu-item:hover>a {
-            color: $highlight;
+        .current-menu-item:hover>a,
+        li>a:hover {
             text-decoration: none;
+            background-color: lighten($highlight, 5%);
+            color: $dark;
         }
     }
 
