@@ -8,17 +8,21 @@ body .loop-container.loop-layout-specials {
         margin-bottom: 20px !important;
         border-radius: 3px;
         box-shadow: 0 0 10px 0 rgba(black, 0.03);
-        text-align: center;
         position: relative;
+
+        @include desktop {
+            text-align: center;
+        }
     }
 
     .excerpt {
         @extend p;
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 15px;
         line-height: 1.3em;
         text-transform: uppercase;
         font-weight: bold;
+        font-family: 'Lato', sans-serif;
         color: $highlight !important;
     }
 
@@ -40,13 +44,15 @@ body .loop-container.loop-layout-specials {
 
     h3 {
         color: $dark;
-        font-family: 'garage';
+        font-family: 'Libre Baskerville', serif;
+        // font-family: 'garage';
         font-weight: normal;
         text-transform: uppercase;
         margin-bottom: 5px;
+        line-heigth: 1.1em;
 
         @include desktop {
-            font-size: 40px;
+            font-size: 34px;
         }
     }
 
