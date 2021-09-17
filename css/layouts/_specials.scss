@@ -1,4 +1,4 @@
-.loop-container.loop-layout-specials {
+body .loop-container.loop-layout-specials {
     align-items: stretch;
     align-content: stretch;
 
@@ -8,12 +8,28 @@
         margin-bottom: 20px !important;
         border-radius: 3px;
         box-shadow: 0 0 10px 0 rgba(black, 0.03);
+        text-align: center;
+        position: relative;
     }
 
     .excerpt {
         @extend p;
         font-size: 20px;
         margin-bottom: 15px;
+        line-height: 1.3em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $highlight !important;
+    }
+
+    .featured-image {
+        padding-top: 55%;
+        height: 0;
+        width: 100%;
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 3px;
     }
 
     .terms {
@@ -23,8 +39,23 @@
     }
 
     h3 {
-        // font-family: 'garage';
-        // font-size: 40px;
-        // font-weight: normal;
+        color: $dark;
+        font-family: 'garage';
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+
+        @include desktop {
+            font-size: 40px;
+        }
+    }
+
+    .post-edit-link {
+        text-align: right;
+        position: absolute;
+        right: 30px;
+        bottom: 5px;
+        margin: 0;
+        padding: 0;
     }
 }

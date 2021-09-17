@@ -18,17 +18,17 @@ function rb_specials_each() {
 	$title = get_the_title();
     $permalink = get_the_permalink();
     $excerpt = get_the_excerpt();
-    $terms = get_post_meta( $id, 'terms', true );
+    $background = get_the_post_thumbnail_url( get_the_ID(), 'large' );   
+    
+    edit_post_link();
     
     if ( $title )
         printf( '<h3>%s</h3>', $title );
         
     if ( $excerpt )
         printf( '<div class="excerpt">%s</div>', $excerpt );
+                
+    if ( $background ) 
+        printf( '<div class="featured-image" style="background-image:url( %s )"></div>', $background );
         
-    if ( $terms )
-        printf( '<div class="terms">%s</div>', $terms );
-        
-    edit_post_link();
-
 }
