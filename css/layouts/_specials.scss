@@ -11,7 +11,7 @@ body .loop-container.loop-layout-specials {
         position: relative;
 
         @include desktop {
-            text-align: center;
+            // text-align: center;
         }
     }
 
@@ -19,11 +19,11 @@ body .loop-container.loop-layout-specials {
         @extend p;
         font-size: 18px;
         margin-bottom: 15px;
-        line-height: 1.3em;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-family: 'Lato', sans-serif;
-        color: $highlight !important;
+        line-height: 1.6em;
+        // text-transform: uppercase;
+        // font-weight: bold;
+        // font-family: 'Lato', sans-serif;
+        // color: $highlight !important;
     }
 
     .featured-image {
@@ -43,13 +43,13 @@ body .loop-container.loop-layout-specials {
     }
 
     h3 {
-        color: $dark;
-        font-family: 'Libre Baskerville', serif;
+        // color: $dark;
+        // font-family: 'Libre Baskerville', serif;
         // font-family: 'garage';
-        font-weight: normal;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        line-heigth: 1.1em;
+        // font-weight: normal;
+        // text-transform: uppercase;
+        margin-bottom: 10px;
+        line-height: 1.1em;
 
         @include desktop {
             font-size: 34px;
